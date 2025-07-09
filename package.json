@@ -2,7 +2,7 @@
   "name": "pwa-demo",
   "version": "1.0.13",
   "private": true,
-  "homepage": "https://EmanIftikharH00362343.github.io/virufy-demo",
+  "homepage": ".",
 
   "scripts": {
     "preinstall": "npx only-allow npm",
