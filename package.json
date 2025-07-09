@@ -2,7 +2,8 @@
   "name": "pwa-demo",
   "version": "1.0.13",
   "private": true,
-  "homepage": "/demo",
+  "homepage": "https://EmanIftikharH00362343.github.io/virufy-demo",
+
   "scripts": {
     "preinstall": "npx only-allow npm",
     "start": "npm run generate:consent-map && react-scripts start",
@@ -91,6 +92,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "gh-pages": "^6.3.0",
     "husky": "^4.3.8",
     "lint-staged": "^10.5.3",
     "typescript": "^4.1.3",
