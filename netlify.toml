@@ -1,0 +1,5 @@
+[build]
+  command   = "npm run build"
+  publish   = "build"
+  # ensure every npm install uses legacy peer deps
+  environment = { NPM_FLAGS = "--legacy-peer-deps" }
