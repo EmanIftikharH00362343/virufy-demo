@@ -1,9 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import loadable from '@loadable/component';
+import hotjar from '@hotjar/browser'
 
 import 'react-datepicker/dist/react-datepicker.css';
 import './i18n';
+
+
 
 // Utils
 import swConfig from 'utils/swConfig';
@@ -14,6 +17,13 @@ import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 const StartApp = loadable(() => import('./start'), {
   fallback: <div>Loading</div>,
 });
+
+// initialize Hotjar before your app mounts
+const siteId = 6457661;
+const hotjarVersion = 6;
+
+hotjar.init(siteId, hotjarVersion)
+
 
 ReactDOM.render(
   <StartApp />,
